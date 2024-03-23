@@ -1,0 +1,175 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <style>
+        body {
+            background-color: #ffffff;
+            color:#190f51;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+        
+        .square {
+            width: 300px;
+            height: 480px;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            border-color: #190f51;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(26, 0, 68, 0.1);
+        }
+
+        label {
+            margin-top: 6px;
+            display: block;
+            font-weight: bold;
+        }
+        input[type="submit" i] {
+            margin-top: 6px;
+            border: 0;
+            background-color: #190f51;
+            color:#fff;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 400;
+            letter-spacing: 0.125em;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+            font-size: 0.75rem;
+            max-width: 20rem;
+            height: 3.75em;
+            line-height: 3.75em;
+            border-radius: 3.75em;
+            padding: 0 2.5em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        input[type="submit"]:hover{
+            background-color: #53c3e6;
+        }
+
+        input{
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .g-recaptcha{
+            margin-top: 10px;
+        }    
+
+    </style>
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DGA000008JoO0" method="POST">
+    
+    <input type=hidden name="oid" value="00DGA000008JoO0">
+    <input type=hidden name="retURL" value="https://empathetic-narwhal-irpu20-dev-ed.trailblaze.lightning.force.com/lightning/page/home">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="valekarikame@gmail.com">                                         -->
+    <!--  ----------------------------------------------------------------------  -->
+    <div class="container">
+        <div class="square">
+            <label for="company">Company</label>
+            <input id="company" maxlength="40" name="company" size="20" type="text" required/><br>
+
+            <label for="first_name">First Name</label>
+            <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
+
+            <label for="last_name">Last Name</label>
+            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
+
+            <label for="email">Email</label>
+            <input id="email" maxlength="80" name="email" size="20" type="text" required/><br>
+
+            <label for="phone">Phone</label>
+            <input id="phone" maxlength="40" name="phone" size="20" type="text" required/><br>
+
+    <label for="product">Product</label>
+    <select  id="00NGA00000U0SKz" maxlength="25" name="00NGA00000U0SKz"  title="Product" required/><br>
+    <option value="">--None--</option>
+    <option value="HK008A2">Carpets Kia</option>
+    <option value="L005A1">Carpets Lada</option>
+    <option value="R008A1">Carpets Renault</option>
+    <option value="VAG010A2">Carpets Skoda</option>
+    <option value="VAG009A1">Carpets Volkswagen</option>
+    <option value="VAG007E4">CFNA</option>
+    <option value="VAG008E5">CFNB</option>
+    <option value="VAG005E2">CFW</option>
+    <option value="VAG006E3">CWVA</option>
+    <option value="VAG004E1">CZCA</option>
+    <option value="GC1020">GenWatt Diesel 10kW</option>
+    <option value="GC1060">GenWatt Diesel 1000kW</option>
+    <option value="GC1040">GenWatt Diesel 200kW</option>
+    <option value="GC5060">GenWatt Gasoline 2000kW</option>
+    <option value="GC5020">GenWatt Gasoline 300kW</option>
+    <option value="GC5040">GenWatt Gasoline 750kW</option>
+    <option value="GC3020">GenWatt Propane 100kW</option>
+    <option value="GC3060">GenWatt Propane 1500kW</option>
+    <option value="GC3040">GenWatt Propane 500kW</option>
+    <option value="HK006E2">G4FG</option>
+    <option value="HK005E1">G4LC</option>
+    <option value="HK003C3">Hyundai Accent</option>
+    <option value="HK004C4">Hyundai Solaris</option>
+    <option value="R007E3">H4M</option>
+    <option value="IN7080">Installation: Industrial - High</option>
+    <option value="IN7040">Installation: Industrial - Low</option>
+    <option value="IN7060">Installation: Industrial - Medium</option>
+    <option value="IN7020">Installation: Portable</option>
+    <option value="HK001C1">Kia Rio</option>
+    <option value="HK002C2">Kia Rio X-Line</option>
+    <option value="R006E2">K4M</option>
+    <option value="R005E1">K7M</option>
+    <option value="L001C1">Lada Vesta</option>
+    <option value="L002C2">Lada Xray</option>
+    <option value="MI001A1">Phone holder Xiaomi</option>
+    <option value="R001C1">Renault Logan</option>
+    <option value="R002C2">Renault Logan Stepway</option>
+    <option value="R003C3">Renault Sandero</option>
+    <option value="R004C4">Renault Sandero Stepway</option>
+    <option value="VAG003C3">Skoda Rapid</option>
+    <option value="SL9020">SLA: Bronze</option>
+    <option value="SL9060">SLA: Gold</option>
+    <option value="SL9080">SLA: Platinum</option>
+    <option value="SL9040">SLA: Silver</option>
+    <option value="L004E2">VAZ-21129</option>
+    <option value="L003E1">VAZ-21179</option>
+    <option value="VAG001C1">Volkswagen Polo Sedan</option>
+    <option value="VAG002C2">Volkswagen Polo 2021</option>
+    </select>
+        <div class="g-recaptcha" data-sitekey="6LfI5JwpAAAAAGcRVLOQz6N5BtUOySHZlpvsNT5E"></div>
+        <input type="submit" name="submit">
+        </div>
+    </div>
+    </form>
